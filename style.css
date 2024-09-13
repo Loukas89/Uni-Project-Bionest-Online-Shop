@@ -1,0 +1,149 @@
+/* Basic Reset */
+* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    background-image: url('Photos/ophelie-authier-qAC7cEFSVis-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    height: 100vh;
+    overflow-x: hidden;
+}
+  
+.container {
+    max-width: 1450px;
+    margin: auto;
+    padding: 0 20px;
+}
+  
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    font-size: larger;
+}
+.mainicon{
+    display: absolute;
+    width: 55%;
+    height: 55%;
+    border-radius: 0px;
+}
+  
+.nav-links a {
+    display: inline-block;
+    color: #10B981;
+    text-decoration: none;
+    margin-right: 45px;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #065F46;
+}
+
+.nav-search-profile {
+    display: flex;
+    align-items: center;
+}
+  
+.search-form {
+    display: flex;
+    align-items: center;
+    margin-right: 0px;
+}
+  
+.search-form input, .search-form button {
+    padding: 8px 12px;
+    margin: 0 5px;
+    border: 1px solid #D1D5DB;
+    border-radius: 4px;
+    outline: none;
+}
+
+  
+.search-form button {
+    background-color: #10B981;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.search-form button:hover {
+    background-color: #059669;
+}
+  
+.icon {
+    display: inline-block;
+    margin-left: 20px; /* Adjust spacing as needed */
+    width: 24px; /* Adjust icon size as needed */
+    height: 24px; /* Adjust icon size as needed */
+    vertical-align: middle;
+  }
+  
+.icon svg {
+    fill: #249b24; /* Set the fill color to white or any color that contrasts well with your navbar background */
+    height: 24px;
+    width: 24px;
+  }
+
+.product-categories {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+    justify-content: space-around; /* Evenly spaces the categories */
+    align-items: stretch; /* Aligns items vertically */
+}
+
+.category {
+    flex: 1 1 22%; /* Each category can grow and shrink but start with 22% of the flex container width */
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.category img {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 400px; /* Maximum height of images */
+}
+
+footer {
+    text-align: center;
+    padding: 5px ;
+    font-size: 0.875rem;
+    color: #2e3033;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-right:  585px;
+    margin-left:  585px;
+    margin-top:  300px;
+}
+.cart-icon {
+    position: relative;
+    display: inline-block;
+}
+
+.cart-icon .count {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-size: 0.8em;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    min-width: 20px;
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}

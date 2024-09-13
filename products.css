@@ -1,0 +1,136 @@
+/* Full CSS setup for the Organic Foods product grid */
+@import url('style.css');  /* Import base styles from your main stylesheet */
+
+/* Grid system setup */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four items per row, adjust if needed */
+    gap: 20px; /* Spacing between items */
+    padding: 20px 0; /* Top and bottom padding for the grid */
+}
+
+/* Individual product card styling */
+.product-card {
+    background-color: rgba(255, 255, 255, 0.5); /* White background for each card */
+    padding: 15px; /* Padding inside each card */
+    border-radius: 8px; /* Rounded corners for each card */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    text-align: center; /* Center align the text inside cards */
+}
+
+.product-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover for a "lifted" effect */
+}
+
+.product-card img {
+    width: 100%; /* Full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+.product-card h2 {
+    font-size: 18px; /* Slightly larger font size for titles */
+    color: #000000; /* Dark grey color for text */
+    margin-bottom: 5px; /* Small gap below the title */
+}
+
+.product-card p {
+    font-size: 14px; /* Standard font size for descriptions */
+    color: #000000; /* Lighter grey for descriptions */
+    margin-bottom: 10px; /* Space at the bottom of the paragraph */
+}
+
+.price {
+    font-size: 16px; /* Font size for price */
+    color: #008000; /* Green color for price to make it stand out */
+    font-weight: bold; /* Bold font weight for price */
+    margin: 10px 0; /* Margin above and below the price */
+}
+
+.add-to-cart {
+    background-color: #008248; /* Color that matches your theme */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer; /* Cursor changes to pointer to indicate it's clickable */
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* Space above the button */
+}
+
+.add-to-cart:hover {
+    background-color: #006837; /* Darker shade on hover for visual feedback */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr); /* Three columns for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for smaller devices */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: 1fr; /* Single column for mobile devices */
+    }
+}
+.cart-icon {
+    position: relative;
+    display: inline-block;
+}
+
+.cart-icon .count {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-size: 0.8em;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    min-width: 20px;
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+footer {
+    text-align: center;
+    padding: 5px;
+    font-size: 0.875rem;
+    color: #2e3033;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-right: 585px;
+    margin-left: 585px;
+    margin-top: 300px;
+}
+.cart-icon {
+    position: relative;
+    display: inline-block;
+}
+
+.cart-icon .count {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-size: 0.8em;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    min-width: 20px;
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}

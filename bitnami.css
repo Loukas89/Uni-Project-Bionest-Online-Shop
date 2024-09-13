@@ -1,0 +1,27 @@
+.module_top, .module_bottom{
+  visibility: hidden;
+}
+
+table {
+  border: 0px !important;
+}
+
+.module_content img{
+  min-width: 70px;
+}
+
+.module_content h2{
+  font-size: 30px;
+}
+body {
+  background-image: url('ophelie-authier-qAC7cEFSVis-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+

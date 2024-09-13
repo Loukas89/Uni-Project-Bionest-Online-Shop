@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    background-image: url('Photos/ophelie-authier-qAC7cEFSVis-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    height: 100vh;
+    overflow-x: hidden;
+}
+  
+.container {
+    max-width: 1450px;
+    margin: auto;
+    padding: 0 20px;
+}
+  
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    font-size: larger;
+}
+.mainicon{
+    display: absolute;
+    width: 55%;
+    height: 55%;
+    border-radius: 0px;
+}
+  
+.nav-links a {
+    display: inline-block;
+    color: #10B981;
+    text-decoration: none;
+    margin-right: 45px;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #065F46;
+}
+
+.nav-search-profile {
+    display: flex;
+    align-items: center;
+}
+  
+.search-form {
+    display: flex;
+    align-items: center;
+    margin-right: 0px;
+}
+  
+.search-form input, .search-form button {
+    padding: 8px 12px;
+    margin: 0 5px;
+    border: 1px solid #D1D5DB;
+    border-radius: 4px;
+    outline: none;
+}
+
+  
+.search-form button {
+    background-color: #10B981;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.search-form button:hover {
+    background-color: #059669;
+}
+  
+.icon {
+    display: inline-block;
+    margin-left: 20px; /* Adjust spacing as needed */
+    width: 24px; /* Adjust icon size as needed */
+    height: 24px; /* Adjust icon size as needed */
+    vertical-align: middle;
+  }
+  
+.icon svg {
+    fill: #249b24; /* Set the fill color to white or any color that contrasts well with your navbar background */
+    height: 24px;
+    width: 24px;
+  }
+  
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #ECFDF5;
+}
+  
+.hero h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #047857;
+}
+.icon profile-icon{
+    margin-left: 10px;
+}
+  
+.hero p {
+    font-size: 1.125rem;
+    color: #065F46;
+    margin-bottom: 20px;
+}
+  
+.hero-buttons a {
+    display: inline-block;
+    background-color: #10B981;
+    color: rgb(255, 255, 255);
+    padding: 10px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+  
+.hero-buttons a:hover {
+    background-color: #059669;
+}
+  
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 40px 0;
+}
+.products2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 80px 0;
+}
+  
+.product {
+    flex-basis: calc(33.333% - 100px);
+    text-align: center;
+}
+.product2 {
+    flex-basis: calc(33.333% - 100px);
+    text-align: center;
+}
+.product3 {
+    flex-basis: calc(33.333% - 100px);
+    text-align: center;
+}
+  
+.product img {
+    max-width: 150%;
+    height: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+.product2 img {
+    max-width: 150%;
+    height: 125%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+.product3 img {
+    max-width: 150%;
+    height: 125%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+  
+.product img:hover {
+    transform: scale(1.05);
+}
+.product2 img:hover {
+    transform: scale(1.05);
+}
+.product3 img:hover {
+    transform: scale(1.05);
+}
+  
+.product p {
+    margin-top: 10px;
+    font-weight: 500;
+    color: #f9fbfa;
+    font-size: x-large;
+}
+.product2 p {
+    margin-top: 10px;
+    font-weight: 500;
+    color: #f9fbfa;
+    font-size: x-large;
+}
+.product3 p {
+    margin-top: 10px;
+    font-weight: 500;
+    color: #f9fbfa;
+    font-size: x-large;
+}
+  
+.info-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px 0;
+}
+  
+.info-card {
+    background-color: #CCF6C8;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+  
+.info-card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+  
+footer {
+    text-align: center;
+    padding: 5px ;
+    font-size: 0.875rem;
+    color: #2e3033;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-right:  780px;
+    margin-left:  780px;
+    margin-top:  300px;
+}
+
+/* Added Form Styling */
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #D1D5DB;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form button[type="submit"] {
+  background-color: #10B981;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+  background-color: #059669;
+}
+section{
+    background-color: #c9eed8;
+    border-radius: 10px;
+    padding: 10px;
+}
+.cart-icon {
+    position: relative;
+    display: inline-block;
+}
+
+.cart-icon .count {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-size: 0.8em;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    min-width: 20px;
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}

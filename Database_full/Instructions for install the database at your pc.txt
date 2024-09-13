@@ -1,0 +1,64 @@
+Step 1: Copy the .bak File to a Secure Location
+Ensure the .bak file (Bio_shop_database.bak) is accessible from your SQL Server instance. It's common to place it in a directory such as C:\Backups or another secure location on the server.
+
+Step 2: Open SQL Server Management Studio (SSMS)
+Launch SSMS:
+
+Open SQL Server Management Studio on your machine.
+Connect to SQL Server:
+
+In the Connect to Server window, enter your SQL Server instance name and click Connect.
+
+Step 3: Restore the Database from the .bak File
+Right-click on Databases:
+
+In the Object Explorer pane on the left, right-click on Databases.
+Select Restore Database...:
+
+From the context menu, select Restore Database....
+Choose the Source for Restore:
+
+In the Restore Database window, select Device under the Source section.
+Click on the ellipsis button (...) next to the Device option.
+Select Backup Media:
+
+In the Select backup devices window, click Add.
+Browse to the location of your .bak file, select Bio_shop_database.bak, and click OK.
+Specify the Database Name:
+
+In the Destination section, enter the name for the new database (e.g., BioShop).
+Review and Start the Restore:
+
+Click OK in the Restore Database window to start the restore process.
+
+Step 4: Verify the Restore Process
+Monitor the Progress:
+
+A progress window will appear showing the status of the restore process.
+Once the restore is complete, a confirmation message will appear.
+Check the Restored Database:
+
+In the Object Explorer pane, expand the Databases node.
+You should see the newly restored database (e.g., BioShop).
+
+Step 5: Explore the Restored Database
+Expand the Database:
+
+Expand the database node to view its objects such as tables, views, stored procedures, etc.
+Query the Database:
+
+Right-click on the database and select New Query.
+Use T-SQL commands to query and explore the database contents. For example:
+sql
+Copy code
+SELECT * FROM [YourTableName];
+
+Summary of Steps:
+Copy the .bak file to a secure location accessible by the SQL Server.
+Open SQL Server Management Studio (SSMS).
+Connect to your SQL Server instance.
+Right-click Databases and select Restore Database....
+Select Device as the source and browse to the .bak file.
+Provide a name for the new database.
+Click OK to start the restore process.
+Verify the restore completion and explore the database.
